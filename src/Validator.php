@@ -3,8 +3,6 @@
 namespace Xylemical\Code\Validator;
 
 use Xylemical\Code\DefinitionInterface;
-use Xylemical\Code\Processor\Processor;
-use Xylemical\Code\Processor\ProcessorInterface;
 
 /**
  * Provides validation using multiple validators.
