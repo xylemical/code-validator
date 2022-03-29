@@ -42,7 +42,15 @@ interface ValidatorInterface {
    * Get the errors during validation.
    *
    * @return \Xylemical\Code\Validator\Error[]
+   *   Get the errors.
    */
   public function getErrors(): array;
+
+  /**
+   * Reset the errors.
+   *
+   * @return $this
+   */
+  public function resetErrors(): static;
 
 }

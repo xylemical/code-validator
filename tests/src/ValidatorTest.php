@@ -75,6 +75,10 @@ class ValidatorTest extends TestCase {
 
     $this->assertEquals($defC, $errors[0]->getDefinition());
     $this->assertEquals('Definition not empty', $errors[0]->getMessage());
+
+    $validator->resetErrors();
+    $this->assertEquals([], $validator->getErrors());
+    $this->assertFalse($validator->hasErrors());
   }
 
 }

@@ -45,4 +45,14 @@ trait ErrorTrait {
     return $this;
   }
 
+  /**
+   * Reset the errors.
+   *
+   * @return $this
+   */
+  public function resetErrors(): static {
+    $this->errors = [];
+    return $this;
+  }
+
 }

@@ -80,6 +80,18 @@ class Validator implements ValidatorInterface {
   }
 
   /**
+   * Reset the errors for the validator.
+   *
+   * @return $this
+   */
+  public function resetErrors(): static {
+    foreach ($this->validators as $validator) {
+      $validator->resetErrors();
+    }
+    return $this;
+  }
+
+  /**
    * Check there is a validator in the validator list.
    *
    * @param \Xylemical\Code\Validator\ValidatorInterface $validator
